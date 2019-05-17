@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Principais Tags HTML</title>
+	</head>
+
+	<body>
+<!-- <h1, h2, h3,...,h6> Para títulos e subtítulos.
+<h1> usado por buscadores para identificar os títulos das páginas, ideal ter somente um no documento.
+-->
+<h1>Principais Tags HTML</h1>
+
+<h2>Tags para Texto</h2> <!-- Isso é um subtítulo -->
+
+
+<p>Primeiro Parágrafo</p> <!-- <p> Para um parágrafo -->
+<p>Segundo Parágrafo</p>
+
+<p>Usando o <strong>strong. </strong>Utilizando o <b>"b" para negrito.</b></p>
+<p>Utilizando o <i>"i" para itálico. </i>Utilizando o <em>"em" para enfasê.</em></p>
+
+<p>As linha em "b" e "strong" possuem a mesma funcionalidade, assim como em "i" e "em", porém semanticamente falando as tags "strong" e "em" tem maior prioridade.</p>
+
+<h3>Anchor link "a" </h3> <!-- Isso é outro subtítulo -->
+<a href="pagina-do-link.html" target="_blank">Link interno</a> <br>
+<a href="https://www.w3schools.com/tags/" target="_blank">Link externo</a> <br>
+<a href="#" target="_blank">Isso é um link vazio</a> 
+<!-- O caractere # específica que é um link vazio sem tirar os atributos da tag -->
+<!-- Estrutura Básica: 
+	<a href="Link de referência" target="_blank"(Para abrir em uma nova guia/aba>O texto a ser exibido</a> -->
+
+<h3>Listas Ordenada "ol" e Não Ordenada "ul" </h3>
+
+<ol>
+	<li>Lista ordenada "ol"</li>
+	<li>Lista ordenada</li>
+	<li>Lista ordenada</li>
+	<li>Lista ordenada</li>
+</ol>
+
+<ul>
+	<li>Lista Não Ordenada "ul"</li>
+	<li>Lista Não Ordenada</li>
+	<li>Lista Não Ordenada</li>
+	<li>Lista Não Ordenada</li>
+</ul>
+
+<h3>Tabelas</h3>
+
+<table> <!-- tag de abertura da tabela -->
+	<tr> <!-- tr (table row) específica uma linha na tabela-->
+		<th>Modelo</th> <!-- th (table head) específica o cabeçário da tabela-->
+		<th>Preço</th>
+	</tr>
+	<tr>
+		<td>X-1415</td> <!-- td (table data) específica os dados da tabela-->
+		<td>R$ 100,00</td>
+	</tr>
+	<tr>
+		<td>X-1425</td>
+		<td>R$ 300,00</td>
+	</tr>
+</table>
+
+
+<p>A diferença se dá basicamente pela enumeração da lista em uma lista "ol"</p>
+
+
+<h3>Colocando imagens "img" </h3>
+
+<img src="../img/naruto.png" alt="Personagem principal do animê Naruto" width="200px" height="140px">
+
+<!-- utilize .. para subir um diretório na navegação entre as pastas -->
+
+
+<h3>Tags Estruturais  </h3>
+
+<table> <!-- tag de abertura da tabela -->
+	<tr> <!-- tr (table row) específica uma linha na tabela-->
+		<th>Tag</th> <!-- th (table head) específica o cabeçário da tabela-->
+		<th>Uso</th>
+		<th>Características</th>
+		<th>Exemplo</th>
+	</tr>
+	<tr>
+		<td>Div</td> <!-- td (table data) específica os dados da tabela-->
+		<td>Div de Divisões rs.</td>
+		<td>Quebra o conteúdo em blocos</td>
+		<td>Dividir as áreas do site</td>
+	</tr>
+	<tr>
+		<td>Span</td>
+		<td>Cria uma separação de conteúdo</td>
+		<td>Diferente da Div, o conteúdo é exibido em linha</td>
+		<td>Mudar a cor de uma letra em uma palavra</td>
+	</tr>
+	<tr>
+		<td>Article</td>
+		<td>Para conteúdos em texto corrido</td>
+		<td>Identificação semântica de conteúdo</td>
+		<td>Post em um blog</td>
+	</tr>
+	<tr>
+		<td>Nav</td>
+		<td>Para criação de menus/navegação</td>
+		<td>Identificação semântica de conteúdo de navegação</td>
+		<td>Menu de um Site</td>
+	</tr>
+	<tr>
+		<td>Header</td>
+		<td>Para criação de menus/navegação</td>
+		<td>Identificação semântica do cabeçalho do site</td>
+		<td>Cabeçalho com Logo/Menu de Navegação</td>
+	</tr>
+	<tr>
+		<td>Footer</td>
+		<td>Para criação de rodapés</td>
+		<td>Identificação semântica do rodapé do site</td>
+		<td>rodapés de sites em geral</td>
+	</tr>
+</table>
+
+<h3>Formulário</h3>
+
+<form action="enviar.php" method="post" name="form"> <!--Tag de abertura-->
+
+<div>	 
+<label for="nome">*Nome: </label> <!--Nome do Campo-->
+<input type="text" id="nome" name="nome" required><!--Tipo do Campo-->
+</div>
+
+<div>
+<label for="email">*Email: </label>
+<input type="email" name="email" id="email" required>
+</div>
+
+<div>
+	<label for="mensagem">*Mensagem</label>
+<textarea id="mensagem" name="mensagem" required></textarea>
+</div>
+
+<button type="submit">Enviar</button>
+</form>
+
+
+
+
+	</body>
+</html>
