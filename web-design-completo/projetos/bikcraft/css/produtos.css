@@ -53,7 +53,6 @@ margin: 6px auto;
 .produto_info ul li{
 	background: #FEC63E;
 	text-transform: uppercase;
-	text-align: center;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 20px;
@@ -62,6 +61,7 @@ margin: 6px auto;
 	width: 229px;
 	height: 49px;
 	padding-top: 16px;
+	text-align: center;
 }
 
 .produto_info ul li:nth-child(1), .produto_info ul li:nth-child(2){
@@ -151,8 +151,8 @@ button {
  display: block;
 }
 
-.dados_email {
-	margin-bottom: 40px;
+.orcamento_dados span:nth-of-type(2) {
+	margin-bottom: 30px;
 }
 
 .orcamento_dados ul {

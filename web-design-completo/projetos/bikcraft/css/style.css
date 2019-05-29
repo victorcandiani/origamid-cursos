@@ -22,7 +22,7 @@ p {
 
 .btn:hover {
 	color: #FFF;
- border-color: #FFF;
+	border-color: #FFF;
 }
 
 .btn_fundo_branco:hover {
@@ -190,8 +190,8 @@ cite {
 }
 
 .produtos li {
-background: #FEC63E;
-text-align: center;
+	background: #FEC63E;
+	text-align: center;
 }
 
 .produtos_lista li h3 {
