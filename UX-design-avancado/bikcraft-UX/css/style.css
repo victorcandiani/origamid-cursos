@@ -1444,6 +1444,47 @@ padding-right: 120px;
 	background: white;
 	color: black;
 }
+
+/* Menu  Hamburguer */
+#origamid-icon {
+	display: block;
+	float: right;
+	width: 40px;
+	height: 30px;
+	padding: 20px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+#origamid-icon::before, #origamid-icon::after {
+	content: '';
+	display: block;
+	height: 4px;
+	transition: .3s;
+}
+
+#origamid-icon::before {
+	background: white;
+	margin-bottom: 8px;
+}
+
+#origamid-icon::after {
+	box-shadow: 0 4px 0 0 white, 0 -4px 0 0 white;
+}
+
+#origamid-icon.active::before, #origamid-icon.active::after {
+	width: 80%;
+	background: white;
+	box-shadow: none;
+}
+
+#origamid-icon.active::before {
+	transform: rotate(45deg) translate(7px, 4px);
+}
+
+#origamid-icon.active::after {
+	transform: rotate(-225deg) translate(-4px, 1px);
+}
 /* Responsivo */
 /* Estilo para Tablets */
 @media only screen and (min-width: 768px) and (max-width: 959px){	
@@ -1505,11 +1546,10 @@ padding-right: 120px;
 
 header {
 	position: relative;
-	padding-bottom: 0;
 }
 
 header img {
-	margin: 0 auto 10px;
+	float: left;
 }
 
 .header_menu {
