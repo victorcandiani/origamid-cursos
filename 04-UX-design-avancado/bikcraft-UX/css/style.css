@@ -1329,7 +1329,7 @@ padding-right: 120px;
 
 .contato_form input {
 	width: 100%;
-	border: 4px solid #FEC63E;
+	border: 3px solid #FEC63E;
 	background: none;
 	padding: 7px 10px;
 	outline: none;
@@ -1340,7 +1340,7 @@ padding-right: 120px;
 .contato_form textarea {
 	width: 100%;
 	height: 120px;
-	border: 4px solid #FEC63E;
+	border: 3px solid #FEC63E;
 	background: none;
 	padding: 7px 10px;
 	outline: none;
@@ -1653,7 +1653,29 @@ padding-right: 0px;
 .contato_form {
 	padding-right: 0px;
 	margin-bottom: 20px;
+}}
+/* Fim do Media Query*/
+
+/* Barra de Load by Pace */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
+.pace-inactive {
+  display: none;
 }
 
+.pace .pace-progress {
+  background: #000000;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
