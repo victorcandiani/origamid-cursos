@@ -1,0 +1,146 @@
+/* Cores */
+.primaria-1 {
+	background: #FEC63E;
+}
+
+.primaria-2 {
+	background: #000000;
+}
+
+.primaria-3 {
+	background: #FFFFFF;
+}
+
+.secundaria-1 {
+	background: #1D1D1D;
+}
+
+/* Tipografia */
+.titulo-1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 48px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.titulo-2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: .1em;
+  font-weight: bold;
+}
+
+.titulo-3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.corpo-1 p {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 18px;
+  line-height: 30px;
+}
+
+.corpo-2 p {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+  line-height: 20px;
+}
+
+.corpo-3 p {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+}
+
+/* Botões e Links */
+.btn-primario a {
+	border: 3px solid #FEC63E;
+  padding: 10px 30px;
+  color: #FEC63E;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+  transition: all .3s ease;
+}
+
+.btn-primario a:hover {
+	color: white;
+	border-color: white;
+}
+
+.btn-secundario a {
+	border: 3px solid #FEC63E;
+  padding: 10px 30px;
+  color: #FEC63E;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+  transition: all .3s ease;
+}
+
+.btn-secundario a:hover {
+	color: #000;
+  border-color: #000;
+}
+
+/* Formulário */
+label {
+  display: block;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+
+input, textarea {
+  width: 100%;
+  border: 3px solid #FEC63E;
+  background: none;
+  padding: 7px 10px;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+textarea {
+	min-height: 120px;
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover {
+	outline: #000000 ;
+	border-color: #000000;
+}
+
+button {
+	background: none;
+	border: 3px solid #FEC63E;
+  padding: 10px 30px;
+  color: #FEC63E;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+  transition: all .3s ease;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #000;
+  border-color: #000;
+}

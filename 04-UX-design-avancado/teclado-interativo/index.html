@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teclado Interativo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h2>Teclado Interativo</h2>
+	<p>Aperte alguma tecla do seu teclado</p>
+
+	<div class="alfabeto">
+		<button>A</button><audio id="a" src="sounds/a.mp3"></audio>
+		<button>B</button><audio id="b" src="sounds/b.mp3"></audio>
+		<button>C</button><audio id="c" src="sounds/c.mp3"></audio>
+		<button>D</button><audio id="d" src="sounds/d.mp3"></audio>
+		<button>E</button><audio id="e" src="sounds/e.mp3"></audio>
+		<button>F</button><audio id="f" src="sounds/f.mp3"></audio>
+		<button>G</button><audio id="g" src="sounds/g.mp3"></audio>
+		<button>H</button><audio id="h" src="sounds/h.mp3"></audio>
+		<button>I</button><audio id="i" src="sounds/i.mp3"></audio>
+		<button>J</button><audio id="j" src="sounds/j.mp3"></audio>
+		<button>K</button><audio id="k" src="sounds/k.mp3"></audio>
+		<button>L</button><audio id="l" src="sounds/l.mp3"></audio>
+		<button>M</button><audio id="m" src="sounds/m.mp3"></audio>
+		<button>N</button><audio id="n" src="sounds/n.mp3"></audio>
+		<button>O</button><audio id="o" src="sounds/o.mp3"></audio>
+		<button>P</button><audio id="p" src="sounds/p.mp3"></audio>
+		<button>Q</button><audio id="q" src="sounds/q.mp3"></audio>
+		<button>R</button><audio id="r" src="sounds/r.mp3"></audio>
+		<button>S</button><audio id="s" src="sounds/s.mp3"></audio>
+		<button>T</button><audio id="t" src="sounds/t.mp3"></audio>
+		<button>U</button><audio id="u" src="sounds/u.mp3"></audio>
+		<button>V</button><audio id="v" src="sounds/v.mp3"></audio>
+		<button>W</button><audio id="w" src="sounds/w.mp3"></audio>
+		<button>X</button><audio id="x" src="sounds/x.mp3"></audio>
+		<button>Y</button><audio id="y" src="sounds/y.mp3"></audio>
+		<button>Z</button><audio id="z" src="sounds/z.mp3"></audio>
+		<button>0</button><audio id="0" src="sounds/0.mp3"></audio>
+		<button>1</button><audio id="1" src="sounds/1.mp3"></audio>
+		<button>2</button><audio id="2" src="sounds/2.mp3"></audio>
+		<button>3</button><audio id="3" src="sounds/3.mp3"></audio>
+		<button>4</button><audio id="4" src="sounds/4.mp3"></audio>
+		<button>5</button><audio id="5" src="sounds/5.mp3"></audio>
+		<button>6</button><audio id="6" src="sounds/6.mp3"></audio>
+		<button>7</button><audio id="7" src="sounds/7.mp3"></audio>
+		<button>8</button><audio id="8" src="sounds/8.mp3"></audio>
+		<button>9</button><audio id="9" src="sounds/9.mp3"></audio>
+		<button>0</button><audio id="0" src="sounds/0.mp3"></audio>
+		<button>1</button><audio id="1" src="sounds/1.mp3"></audio>
+		<button>2</button><audio id="2" src="sounds/2.mp3"></audio>
+		<button>3</button><audio id="3" src="sounds/3.mp3"></audio>
+		<button>4</button><audio id="4" src="sounds/4.mp3"></audio>
+		<button>5</button><audio id="5" src="sounds/5.mp3"></audio>
+		<button>6</button><audio id="6" src="sounds/6.mp3"></audio>
+		<button>7</button><audio id="7" src="sounds/7.mp3"></audio>
+		<button>8</button><audio id="8" src="sounds/8.mp3"></audio>
+		<button>9</button><audio id="9" src="sounds/9.mp3"></audio>
+	</div>
+	
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="pace.min.js"></script>
+	<script type="text/javascript" src="mousetrap.min.js"></script>
+	<script type="text/javascript">
+
+		$('button').on('click', function() {
+			var next = $(this).next().attr('id');
+			sound = document.getElementById(next);
+			sound.play();
+		});
+
+		Mousetrap.bind('a', function() {document.getElementById('a').play(); });
+		Mousetrap.bind('b', function() {document.getElementById('b').play(); });
+		Mousetrap.bind('c', function() {document.getElementById('c').play(); });
+		Mousetrap.bind('d', function() {document.getElementById('d').play(); });
+		Mousetrap.bind('e', function() {document.getElementById('e').play(); });
+		Mousetrap.bind('f', function() {document.getElementById('f').play(); });
+		Mousetrap.bind('g', function() {document.getElementById('g').play(); });
+		Mousetrap.bind('h', function() {document.getElementById('h').play(); });
+		Mousetrap.bind('i', function() {document.getElementById('i').play(); });
+		Mousetrap.bind('j', function() {document.getElementById('j').play(); });
+		Mousetrap.bind('k', function() {document.getElementById('k').play(); });
+		Mousetrap.bind('l', function() {document.getElementById('l').play(); });
+		Mousetrap.bind('m', function() {document.getElementById('m').play(); });
+		Mousetrap.bind('n', function() {document.getElementById('n').play(); });
+		Mousetrap.bind('o', function() {document.getElementById('o').play(); });
+		Mousetrap.bind('p', function() {document.getElementById('p').play(); });
+		Mousetrap.bind('q', function() {document.getElementById('q').play(); });
+		Mousetrap.bind('r', function() {document.getElementById('r').play(); });
+		Mousetrap.bind('s', function() {document.getElementById('s').play(); });
+		Mousetrap.bind('t', function() {document.getElementById('t').play(); });
+		Mousetrap.bind('u', function() {document.getElementById('u').play(); });
+		Mousetrap.bind('v', function() {document.getElementById('v').play(); });
+		Mousetrap.bind('w', function() {document.getElementById('w').play(); });
+		Mousetrap.bind('x', function() {document.getElementById('x').play(); });
+		Mousetrap.bind('y', function() {document.getElementById('y').play(); });
+		Mousetrap.bind('z', function() {document.getElementById('z').play(); });
+		Mousetrap.bind('0', function() {document.getElementById('0').play(); });
+		Mousetrap.bind('1', function() {document.getElementById('1').play(); });
+		Mousetrap.bind('2', function() {document.getElementById('2').play(); });
+		Mousetrap.bind('3', function() {document.getElementById('3').play(); });
+		Mousetrap.bind('4', function() {document.getElementById('4').play(); });
+		Mousetrap.bind('5', function() {document.getElementById('5').play(); });
+		Mousetrap.bind('6', function() {document.getElementById('6').play(); });
+		Mousetrap.bind('7', function() {document.getElementById('7').play(); });
+		Mousetrap.bind('8', function() {document.getElementById('8').play(); });
+		Mousetrap.bind('9', function() {document.getElementById('9').play(); });
+
+
+	</script>
+</body>
+</html>

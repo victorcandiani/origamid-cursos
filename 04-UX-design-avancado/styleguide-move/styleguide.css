@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito&display=swap');
+
+/* Cores */
+.primaria-1 {
+	background: #ffd738;
+}
+
+.primaria-2 {
+	background: #348491;
+}
+
+.primaria-3 {
+	background: #14233C;
+}
+
+.secundaria-1 {
+	background: #525252;
+}
+
+.secundaria-2 {
+  background: #748F9D;
+}
+
+/* Tipografia */
+.titulo-1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: -.01em;
+  line-height: 1em;
+  text-transform: none;
+}
+
+.titulo-2 {
+  color: #ffd738;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: -.06em;
+  line-height: .8em;
+  text-transform: none;
+}
+
+.titulo-3 {
+	font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: -.01em;
+  line-height: 1em;
+  text-transform: none;
+}
+
+.corpo-1 p {
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0em;
+  line-height: 1.5em;
+  text-transform: none;
+  color: #292929;
+}
+
+
+/* Botões e Links */
+.btn-primario a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  padding: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  color: #000;
+  border-width: 2px;
+  border-style: solid;
+  transition: 0.1s background-color linear, 0.1s color linear;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .24em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-color: #000;
+}
+
+.btn-primario a:hover {
+  font-size: 12px;
+  padding: 20px;
+  font-weight: 600;
+  color: #ffd738;
+  background-color: #000;
+}
+
+.btn-secundario a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  padding: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  color: #ffd738;
+  border-width: 2px;
+  border-style: solid;
+  transition: 0.1s background-color linear, 0.1s color linear;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .24em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-color: #ffd738;
+  }
+
+.btn-secundario a:hover {
+  font-size: 12px;
+  padding: 20px;
+  font-weight: 600;
+  color: #000;
+  background-color: #ffd738;
+}
+
+.link-1 a {
+  font-family: 'Nunito', sans-serif;
+  padding-bottom: .05em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(125,125,125,.3);
+  transition: border-color .15s ease-out,color .15s ease-out;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 0em;
+  line-height: .9em;
+  text-transform: uppercase;
+  color: #7d7d7d;
+}
+
+.link-1 a:hover {
+  color: rgba(125,125,125,.6);
+  border-color: rgba(125,125,125,.15);
+}
+
+.link-2 a {
+  font-family: 'Nunito', sans-serif;
+  padding-bottom: .05em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(180,215,221,.3);
+  transition: border-color .15s ease-out,color .15s ease-out;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 0em;
+  line-height: .9em;
+  text-transform: uppercase;
+  color: #748F9D;
+}
+
+.link-2 a:hover {
+  color: rgba(180,215,221,.6);
+  border-color: rgba(180,215,221,.15);
+}
+
+/* Formulário */
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0em;
+  line-height: 1.5em;
+  text-transform: none;
+  color: #292929;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 4px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  box-sizing: border-box;
+  border-radius: 2px
+}
+
+textarea {
+	min-height: 120px;
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover {
+  background: #fff;
+	transition: background .1s ease-in;
+  outline: none;
+}
+
+button {
+	font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  padding: 20px;
+  font-weight: 700;
+  background-color: transparent;
+  color: #000;
+  border-width: 2px;
+  border-style: solid;
+  transition: 0.1s background-color linear, 0.1s color linear;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .24em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-color: #000;
+}
+
+button:hover {
+	color: #fff;
+  border-color: #000;
+  background: #000;
+}
