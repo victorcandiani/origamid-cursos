@@ -3,7 +3,7 @@
 }
 
 body {
-	height:  800px;
+	height:  1200px;
 }
 
 /* Header */
@@ -37,6 +37,7 @@ nav ul li a:hover {
 
 .planos {
 	background: url('../img/pattern.png'), linear-gradient(135deg, #01a7ec, #065ba5);
+	margin-bottom: 220px;
 }
 
 .planos .container {
@@ -57,7 +58,7 @@ nav ul li a:hover {
 .plano-item {
 	background: #fff;
 	border-radius: 5px;
-	box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
 	margin-bottom: -220px;
 }
 
@@ -119,6 +120,140 @@ nav ul li a:hover {
 	margin: 0 20px 20px;
 	text-transform: uppercase;
 }
+
+/* Vantagens */
+.vantagens {
+
+}
+
+.vantagens h1 {
+	font-size: 1.75em;
+	color: #ff6200;
+	text-align: center;
+	margin: 40px;
+}
+
+.vantagens svg {
+	display: block;
+	max-width: 60px;
+	margin: 0 auto;
+}
+
+svg.animate path {
+	animation: svg-animate 2s forwards;
+}
+
+@keyframes svg-animate {
+	from {}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.vantagens h2 {
+	font-size: 1.25em;
+	color: #01a7ec;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.vantagens p {
+	text-align: center;
+	line-height: 1.4em;
+}
+
+/* Modal */
+.modal {
+	position: fixed;
+	top:  0;
+	left: 0;
+	background: rgba(0, 0, 0, 0);
+	width: 100%;
+	height: 100vh;
+	height: 0;
+	transition: background .3s;
+	visibility: hidden;
+}
+
+.modal-ativo {
+	height: 100vh;
+	background: rgba(0, 0, 0, .5);
+	visibility: visible;
+}
+
+.modal-wrapper {
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	transform: translate(0, -20px);
+	top: 100px;
+	transition: .5s;
+	opacity: 0;
+}
+
+.modal-ativo .modal-wrapper {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.modal-wrapper h1 {
+	color: #ff6200;
+	font-size: 1.75em;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.modal-wrapper label {
+	color: #b3c0c6;
+	font-size: 1.25em;
+	display: block;
+}
+
+.modal-wrapper input {
+	width: 100%;
+	border-radius: 5px;
+	background: #e1e8eb;
+	border: 2px solid #b3c0c6;
+	padding: 5px;
+	color:  #101010;
+	outline: none;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+.modal-wrapper input:hover,
+.modal-wrapper input:focus {
+	background: none;
+}
+
+button.btn {
+	display: block;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsivo	
 	@media only screen and (max-width: 350px) {
