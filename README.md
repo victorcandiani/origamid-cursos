@@ -18,4 +18,12 @@ Curso para aprofundar os conceitos de UI, para entender seus elementos e como s�
 
 **Projetos:** Robot e Surfbot
 
+### UX Design Avançado
+Como melhorar a experiência dos usuários baseado nas heurísticas de grandes nomes da UX, como Donald Norman e Jakob Nielsen. Projetos realizados através do Figma, HTML, CSS e JavaScript. Trabalhado tempo de resposta no projeto do Bickcraft, com a adição de uma barra de loading e o uso de conveções com a adição de uma menu hambúrguer. Criado guias de estilos, teclado interativo com Mousetrap.js, tooltip etc.
 
+**Projetos:** Bikcraft + Pace.js e Menu Hambúrguer, Styleguides da Bikcfrat e Move, Teclado Interativo, Tooltip e por fim, Vanbook do Figma ao HTML/CSS + Modal. 
+
+### Adobe XD
+Conhecendo a ferramenta e prototipando uma página para a Web
+
+**Projetos:** Little Invest
