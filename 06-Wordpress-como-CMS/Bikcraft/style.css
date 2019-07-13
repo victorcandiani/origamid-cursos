@@ -1,5 +1,5 @@
 /*
-Theme Name: BIkcraft
+Theme Name: Bikcraft
 Theme URI: http://bikcraft.com
 Author: Victor Candiani
 Description: Tema criado para a Bikcraft
@@ -695,7 +695,6 @@ header {
 .introducao {
 	width: 100%;
 	height: 360px;
-	background: url("img/bg.jpg") no-repeat center;
 	background-size: cover;
 	margin-top: 92px;
 	text-align: center;
@@ -1018,11 +1017,6 @@ footer h3:after {
 
 /* Sobre - Interna */
 
-.interna_sobre {
-	background: url("img/bg-sobre.jpg") no-repeat center;
-	background-size: cover;
-}
-
 .missao_sobre {
 	padding-top: 60px;
 }
@@ -1045,11 +1039,6 @@ footer h3:after {
 }
 
 /* Produtos - Interna */
-.interna_sobre {
-	background: url("img/bg-produtos.jpg") no-repeat center;
-	background-size: cover;
-}
-
 .produtos_item {
 	padding-top: 60px;
 }
@@ -1220,11 +1209,6 @@ padding-right: 120px;
 }
 
 /* Portfólio Interna */
-.interna_portfolio {
-	background: url("img/bg-portfolio.jpg") no-repeat center;
-	background-size: cover;
-}
-
 .quote_clientes {
 	padding: 60px 0;
 	max-width: 460px;
@@ -1311,11 +1295,6 @@ padding-right: 120px;
 }
 
 /* Contato Interna */
-.interna_contato {
-	background: url("img/bg-contato.jpg") no-repeat center;
-	background-size: cover;
-}
-
 /* Orçamento */
 
 .contato {
@@ -1585,7 +1564,6 @@ header img {
  
 /* Introdução */
 .introducao {
-	background: url("img/bg-mobile.jpg") no-repeat center;
 	background-size: cover;
 	margin-top: 0;
 	padding-top: 20px;

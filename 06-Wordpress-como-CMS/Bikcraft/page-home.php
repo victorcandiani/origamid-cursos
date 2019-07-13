@@ -3,6 +3,25 @@
 get_header(); 
 ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+	<?php
+
+	$imagem_id = get_field('background_home');
+	$backgroundLarge = wp_get_attachment_image_src( $imagem_id, 'large');
+	$backgroundMedium = wp_get_attachment_image_src( $imagem_id, 'medium');
+
+	?>
+
+	<style type="text/css">
+		.introducao {
+			background: url("<?php echo $backgroundLarge[0] ?>") no-repeat center;
+		}
+		@media only screen and (max-width: 767px){
+			.introducao {
+				background: url("<?php echo $backgroundMedium[0] ?> ") no-repeat center;
+			}
+		}
+	</style>
 		<section class="introducao">
 			<div class="container">
 				<h1><?php the_field('titulo_da_intro'); ?></h1>
