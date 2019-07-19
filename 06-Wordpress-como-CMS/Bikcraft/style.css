@@ -774,6 +774,7 @@ cite {
 .produtos li {
 	background: #FEC63E;
 	text-align: center;
+	color: #000;
 }
 
 .produtos_lista li h3 {

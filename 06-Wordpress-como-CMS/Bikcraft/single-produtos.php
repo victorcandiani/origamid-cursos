@@ -4,37 +4,25 @@ get_header();
 ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
-	<?php include(TEMPLATEPATH . "/includes/intro.php");?>
-
-
-	<?php
-		$args = array (
-			'post_type' => 'produtos'
-		);
-		$the_query = new WP_Query ( $args );
-	?>
-
-	<?php if ( $the_query -> have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
 		<section class="container produtos_item animar-interno">
-			
-			<a href="<?php the_permalink(); ?> ">
 			<div class="grid-11">
 				<img src="<?php the_field('foto_produto_1'); ?>" alt="Bikcraft <?php the_title(); ?>">
 
 				<h2><?php the_title(); ?></h2>
 
 			</div>
-
 			<div class="grid-5 produto_icone">
 				<img src="<?php the_field('icone_produto'); ?>" alt="icone <?php the_title(); ?>">
 			</div>
-			</a>
+			<div class="grid-8">
+				<img src="<?php the_field('foto_produto_2'); ?>" alt="Bikcraft <?php the_title(); ?>">
+			</div>
+			<div class="grid-8 produto_info">
 
-		</section>
+				<?php the_content(); ?>
 
-	<?php endwhile; else: endif; ?>
-	<?php wp_reset_query(); wp_reset_postdata(); ?>
+			</div>
+			</section>
 
 		<?php include(TEMPLATEPATH . "/includes/itens-orcamento.php");?>
 

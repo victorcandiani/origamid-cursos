@@ -34,32 +34,33 @@ get_header();
 		</section>
 
 
+
 		<section class="produtos container animar">
 			<h2 class="subtitulo">Produtos</h2>
 			<ul class="produtos_lista">
-				<li class="grid-1-3">
-					<div class="produtos_icone">
-						<img src="<?php echo get_template_directory_uri();?>/img/produtos/passeio.png" alt="bicicleta passeio">
-					</div>
-					<h3>Passeio</h3>
-					<p>Muito melhor do que passear pela orla a vidros fechados.</p>
-				</li>
 
-				<li class="grid-1-3">
-					<div class="produtos_icone">
-						<img src="<?php echo get_template_directory_uri();?>/img/produtos/esporte.png" alt="bicicleta passeio">
-					</div>
-					<h3>Esporte</h3>
-					<p>Mais rápida do que Forrest Gump, ninguém vai pegar você.</p>
-				</li>
+				<?php
+					$args = array (
+						'post_type' => 'produtos'
+					);
+					$the_query = new WP_Query ( $args );
+				?>
 
-				<li class="grid-1-3">
-					<div class="produtos_icone">
-						<img src="<?php echo get_template_directory_uri();?>/img/produtos/retro.png" alt="bicicleta passeio">
-					</div>
-					<h3>Retro</h3>
-					<p>O passado volta para lembrarmos o que devemos fazer no futuro.</p>
-				</li>
+				<?php if ( $the_query -> have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			
+					<a href="<?php the_permalink(); ?> ">
+						<li class="grid-1-3">
+							<div class="produtos_icone">
+								<img src="<?php the_field('icone_produto') ?>" alt="bicicleta <?php the_title(); ?>">
+							</div>
+							<h3><?php the_title(); ?></h3>
+							<p><?php the_field('resumo_produto') ?></p>
+						</li>
+					</a>
+
+				<?php endwhile; else: endif; ?>
+				<?php wp_reset_query(); wp_reset_postdata(); ?>
+
 			</ul>
 
 			<div class="call">

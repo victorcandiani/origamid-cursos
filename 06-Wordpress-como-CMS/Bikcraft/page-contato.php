@@ -8,7 +8,7 @@ get_header();
 
 		<section class="contato container animar-interno">
 
-				<form action="enviar.php" method="post" name="form" class="formphp contato_form grid-8">
+				<form action="<?php echo get_template_directory_uri();?>/enviar.php" method="post" name="form" class="formphp contato_form grid-8">
 
 					<label for="nome">Nome</label>
 					<input id="nome" name="nome" type="text" placeholder="Digite seu nome">
@@ -32,21 +32,19 @@ get_header();
 
 				<div class="contato_dados grid-8">
 					<h3>Dados</h3>
-					<span>+55 (21) 93223 3232</span>
-					<span>orcamento@bikcraft.com</span>
-					<span>Rua Ali Perto - Botafogo</span>
-					<span>Rio de Janeiro - RJ - Brasil</span>
+						<span><?php the_field('telefone'); ?></span>
+						<span><?php the_field('email'); ?></span>
+						<span><?php the_field('endereco1'); ?></span>
+						<span><?php the_field('endereco2'); ?></span>
 					<h3>Redes Sociais</h3>
-					<ul>
-						<li><a href="#" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/redes-sociais/facebook.png" alt="icone facebook"></a></li>
-						<li><a href="#" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/redes-sociais/instagram.png" alt="icone instagram"></a></li>
-						<li><a href="#" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/redes-sociais/twitter.png" alt="icone twitter"></a></li>
-					</ul>
+
+					<?php include(TEMPLATEPATH . "/includes/redes-sociais.php");?>
+
 			</div>
 		</section>
 
 		<section class="container contato_mapa">
-			<a class="grid-16" href="#" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/endereco-bikcraft.jpg" alt="mapa endereço bikcraft"></a>
+			<a class="grid-16" href="<?php the_field('link_do_endereco_no_google'); ?>" target="_blank"><img src="<?php the_field('imagem_do_mapa'); ?>" alt="mapa endereço bikcraft"></a>
 		</section>
 
 <?php endwhile; else: endif; ?>
