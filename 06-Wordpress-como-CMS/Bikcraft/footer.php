@@ -45,9 +45,6 @@
 			</div>
 
 			<!-- Começo JavaScript -->
-			<script src="<?php echo get_template_directory_uri();?>/js/libs/jquery-1.11.2.min.js"></script>
-			<script src="<?php echo get_template_directory_uri();?>/js/plugins.js"></script>
-			<script src="<?php echo get_template_directory_uri();?>/js/main.js"></script>
 			<script>
 				$(function() {
 					$(".rslides").responsiveSlides();

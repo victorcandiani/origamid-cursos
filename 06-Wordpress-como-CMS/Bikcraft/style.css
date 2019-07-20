@@ -691,7 +691,7 @@ header {
 	transition: all .3s ease; 
 }
 
-.header_menu ul li a.menu_ativo {
+.header_menu ul li.current-menu-item a {
 	color: #FFF;
 }
 
@@ -1435,6 +1435,11 @@ padding-right: 120px;
 #origamid-menu li a:hover {
 	background: white;
 	color: black;
+}
+
+#origamid-menu li.current_page_item a {
+   color: #FEC63E;
+   background: black;
 }
 
 /* Menu  Hamburguer */
