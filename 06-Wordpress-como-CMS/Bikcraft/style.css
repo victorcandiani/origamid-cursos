@@ -658,12 +658,12 @@ img {
 
 /* Header */
 header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background: #FEC63E;
-	padding: 15px 0;
-	z-index: 5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fec63e;
+  padding: 15px 0;
+  z-index: 10;
 }
 
 .header_menu {
@@ -1482,6 +1482,68 @@ padding-right: 120px;
 #origamid-icon.active::after {
 	transform: rotate(-225deg) translate(-4px, 1px);
 }
+
+/*Blog Arquivos*/
+.introducao-blog {
+  background: #000;
+}
+
+.blog-container {
+  padding: 40px 0;
+}
+
+.blog-post:nth-of-type(odd) {
+  background: #FEC63E;
+}
+
+.blog-post a {
+  font-size: 28px;
+  color: #000;
+  display: block;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.blog-post a:after {
+  content: "→";
+  text-align: right;
+  display: block;
+  float: right;
+}
+
+.blog-post a:hover {
+  color: #FEC63E;
+  background: #000;
+}
+
+.nav-blog {
+  margin-top: 20px;
+}
+
+.nav-blog a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FEC63E;
+}
+
+.nav-blog a {
+  margin-right: 20px;
+}
+
+.introducao-geral {
+  background: #000;
+  height: 120px !important;
+}
+
+.conteudo-geral {
+  padding: 40px 0;
+}
+
+.conteudo-geral p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 /* Responsivo */
 /* Estilo para Tablets */
 @media only screen and (min-width: 768px) and (max-width: 959px){	
