@@ -1,0 +1,458 @@
+/* Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body, 
+html {
+	font-family: Georgia, serif;
+	color: #252525;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Menu */
+
+.menu {
+	background: #252525;
+	padding: 20px 0;
+}
+
+.menu-nav a {
+	color: #fff;
+	font-size: 1.125em;
+}
+
+.menu-nav li {
+	display: inline-block;
+	float: right;
+}
+
+.menu-nav a {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+	.menu-nav ul {
+		float: none;
+	}
+
+	.menu-nav ul li a {
+		margin-left:  0;
+	}
+
+}
+
+/* Intro */
+
+.intro {
+	background: url('../img/bg-intro.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	padding: 120px 0;
+	text-align: center;
+}
+
+.intro h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.intro h1::after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	margin: 10px auto;
+}
+
+.intro p {
+	font-style: italic;
+	font-size: 1.125em;
+}
+
+@media (max-width: 739px ) {
+	.intro {
+		padding: 60px 0;
+	}
+}
+
+/* Sobre */
+
+.sobre {
+	padding: 60px 0;
+}
+
+.sobre h2 {
+	text-align: center;
+	font-size: 2.25em;
+	padding-bottom: 60px;
+}
+
+.sobre-item h3 {
+	background: #252525;
+	color: #fff;
+	width: 220px;
+	line-height: 1em;
+	font-size: 2.25em;
+	font-style: italic;
+	padding: 5px 0 10px;
+	text-align: center;
+	top: -25px;
+	position: relative;
+}
+
+.sobre > p {
+	text-align: center;
+	max-width: 460px;
+	margin: 0 auto;
+	line-height: 1.4em;
+	font-size: 1.125em;
+	font-style: italic;
+	padding-top: 30px;
+}
+
+/* Produtos */
+
+.produtos {
+	background: #e7e4d8;
+	border-top: 3px solid #d6d3c8;
+	border-bottom: 3px solid #d6d3c8;
+	padding: 60px 0;
+}
+
+.produtos-item h2 {
+	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.produtos-item h2::before {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: currentColor;
+	border-radius: 50%;
+	border: 5px solid #e7e4d8;
+	box-shadow: 0 0 0 5px currentColor;
+	margin: 20px auto;
+}
+
+h2.produtos-paulista::before {
+	color: #492901;
+}
+
+h2.produtos-carioca::before {
+	color: #c17139;
+}
+
+h2.produtos-mineiro::before {
+	color: #d7a54d;
+}
+
+.produtos-item p {
+	font-size: 0.975em;
+	line-height: 1.4em;
+}
+
+.produtos-btn {
+	text-align: center;
+	width: 180px;
+	margin: 20px auto 0;
+	color: #252525;
+	border: 3px solid;
+	text-decoration: none;
+	display: block;
+	padding: 15px 0;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.produtos-btn:hover {
+	color: #e7e4d8;
+	border: 3px solid #252525;
+	background: #252525;
+	transition: 0.3s;
+}
+
+@media (max-width: 739px) {
+	.produtos-item {
+		margin: 0 auto 20px;
+		text-align: center;
+	}
+}
+
+/* Locais */
+.locais {
+margin-top: 60px;
+}
+
+.locais-item {
+	padding-bottom: 60px;
+}
+
+.locais-item h2 {
+	font-size: 2.25em;
+	margin-bottom: 20px;
+}
+
+.locais-item p {
+	max-width: 320px;
+	line-height: 1.4em;
+	font-size: 1.125em;
+	margin-bottom: 40px;
+}
+
+.locais-btn {
+	text-align: center;
+	color: #252525;
+	border: 3px solid;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.locais-btn:hover {
+	color: #e7e4d8;
+	border: 3px solid #252525;
+	background: #252525;
+	transition: 0.3s;
+}
+
+@media (max-width: 739px) {
+	.locais-item p {
+		margin-bottom: 20px;
+	}
+
+	.locais-btn {
+		margin: 0 auto;
+    display: block;
+    width: 150px;
+	}
+}
+
+/* Assine */
+
+.assine {
+	background: #e7e4d8;
+	padding: 30px 0;
+}
+
+.assine-info h2 {
+	font-size: 2.25em;
+}
+
+.assine-info p {
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.assine form label {
+	display: none;
+}
+
+.assine input {
+	border: 3px solid #252525;
+	background: none;
+	font-style: italic;
+	font-size: 1.5em;
+	padding: 10px;
+	float: left;
+	font-family: Georgia, serif;
+	width: calc(100% - 140px);
+}
+
+.assine button {
+	background: #252525;
+	font-family: Georgia, serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	width: 140px;
+	float: left;
+	padding: 13px 0;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.assine button:hover {
+	background: #101010;
+}
+
+@media (max-width: 739px) {
+	.assine-info p,
+	.assine-info h2{
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.assine-info, 
+	.assine input  {
+		width: 100%;
+		float: none;
+	}
+
+	.assine button {
+		margin: 20px auto 0;
+		display: block;
+		float: none;
+	}
+}
+
+
+/*Footer*/
+
+.footer {
+	background: #d6d3c8;
+	padding: 30px 0;
+}
+
+.footer p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+}
+
+.footer img {
+	float: right;
+}
+
+@media (max-width: 739px) {
+	.footer img {
+		margin: 20px auto;
+		float: none;
+	}
+
+	.footer p {
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+}
+
+/* Menu Styles */
+#origamid-menu {
+	visibility: hidden;
+	position: absolute;
+	background: black;
+	max-width: 180px;
+	padding: 20px;
+	right: 0;
+	top: 50px;
+	text-align: left;
+	opacity: 0;
+	transform: translate(-20px, 0px);
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,.4);
+	z-index: 999;
+}
+
+#origamid-menu.active {
+  visibility: visible;
+	opacity: 1;
+	transform: translate(0px, 0px);
+	transition: .3s ease;
+}
+
+#origamid-menu li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	border-top: 2px solid;
+}
+
+#origamid-menu li:last-of-type {
+	border-bottom: 2px solid;
+}
+
+#origamid-menu li a {
+	display: block;
+	float: none;
+	padding: 10px;
+	margin: 0px;
+	border: none;
+	min-width: 140px;
+}
+
+#origamid-menu li a:hover {
+	background: white;
+	color: black;
+}
+
+/* Menu  Hamburguer */
+#origamid-icon {
+	display: block;
+	float: right;
+	width: 40px;
+	height: 30px;
+	padding: 20px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin-top: -45px;
+}
+
+#origamid-icon::before, #origamid-icon::after {
+	content: '';
+	display: block;
+	height: 4px;
+	transition: .3s;
+}
+
+#origamid-icon::before {
+	background: white;
+	margin-bottom: 8px;
+}
+
+#origamid-icon::after {
+	box-shadow: 0 4px 0 0 white, 0 -4px 0 0 white;
+}
+
+#origamid-icon.active::before, #origamid-icon.active::after {
+	width: 80%;
+	background: white;
+	box-shadow: none;
+}
+
+#origamid-icon.active::before {
+	transform: rotate(45deg) translate(7px, 4px);
+}
+
+#origamid-icon.active::after {
+	transform: rotate(-225deg) translate(-4px, 1px);
+}
+
+/* Barra de Load by Pace */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #fff;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}
