@@ -27,3 +27,14 @@ Como melhorar a experiência dos usuários baseado nas heurísticas de grandes n
 Conhecendo a ferramenta e prototipando uma página para a Web
 
 **Projetos:** Little Invest
+
+### Wordpress como CMS
+Transformando um projeto HTML/CSS em um layout Wordpress.
+Criando advanced custom fields para gerenciar o conteúdo dos sites através da plataforma do Wordpress, dando mais autonomia para os clientes.
+
+**Projetos:** Bikcraft e Rest
+
+### CSS Avançado Posicionamento
+Posicionando um layout por HTML puro + CSS (usando float e clearfix), Flexbox, Sistema de Grid e Bootstrap.
+
+**Projetos:** Brafé 1, 2 e 3
