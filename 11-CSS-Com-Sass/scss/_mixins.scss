@@ -1,0 +1,29 @@
+@mixin title-large {
+  font: {
+    size: 4em;
+    weight: bold;
+    family: monospace;
+  }
+  line-height: 1;
+}
+
+@mixin separador ($color, $heigth) {
+  &::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: $heigth;
+    background: $color;
+    margin: 10px auto;
+  }
+}
+
+@mixin box-shadow ($shadow...) {
+  box-shadow: $shadow;
+}
+
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}

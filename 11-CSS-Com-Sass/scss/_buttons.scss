@@ -1,0 +1,15 @@
+.btn {
+  background: $primary;
+  color: $textoClaro;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  width: 120px;
+  border: solid $secondary 3px;
+  &:hover {
+    border: solid $primary;
+    background: $secondary;
+  }
+}
